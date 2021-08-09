@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img{
+	width: 100%;
+}
+html{
+	font-family: 'Barlow', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	margin: 5px;
+}
+header{
+	background-image: url("images/mobile/image-header.jpg");
+	padding: 20px 15px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 29em;
+	text-align: center;
+}
+header .logo{
+	float: left;
+}
+#dropdown{
+	float: right;
+	position: relative;
+}
+#dropdown-content{
+	clear: both;
+	margin: 10% 6% 0 6%;	
+	position: absolute;
+	background: white;
+	display: none;
+	width: 80%;
+	height: 45%;
+	padding-top: 10%;
+}
+#dropdown-content #cont{
+	background: hsl(51, 100%, 49%);
+	text-transform: uppercase;
+	color: black;
+	font-family: 'Fraunces', serif;
+	padding: 6px 10px 6px 10px;
+}
+#dropdown-content a{
+	position: relative;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 30px;
+	margin: 0 40px 15px 40px;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+}
+header h1{
+	clear: both;
+	padding-top: 2em;
+	color: hsl(0, 0%, 100%);
+	text-transform: uppercase;
+	font-family: 'Fraunces', serif;
+}
+#icon-arrow{
+	margin-top: 4em;
+}
+main > img{
+	margin-top: 0;
+}
+h2, h4{
+	font-family: 'Fraunces', serif;
+	padding: 20px;
+	margin: 15px auto;
+}
+h4{
+	text-transform: uppercase;
+	font-size: 80%;
+	text-decoration: underline hsl(7, 99%, 70%) 5px;
+	text-underline-offset: -0.2em;
+
+}
+p{
+	padding: 5px;
+	color: hsl(213, 9%, 39%);
+}
+#gra{
+	height: 30em;
+	background-image: url("images/desktop/image-graphic-design.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#graphic{
+	color: hsl(167, 40%, 24%);
+	padding-top: 15em;
+}
+#photo{
+	height: 30em;
+	background-image: url("images/desktop/image-photography.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#photography{
+	color: hsl(198, 62%, 26%);
+	padding-top: 17em;
+}
+#client{
+	margin: 3em auto;
+	font-family: 'Fraunces', serif;
+	text-transform: uppercase;
+}
+#client, span{
+	color: gray;
+}
+.person img{
+	width: 3em;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+.info p{
+	font-family: 'Fraunces', serif;
+}
+.info span{
+	font-size: 80%;
+}
+.person{
+	margin-bottom: 30px;
+}
+#image{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	width: 100%;
+}
+#image img{
+	width: 100%;
+}
+footer{
+	background: rgb(144,212,197);
+	color: hsl(168, 34%, 41%);
+}
+#last{
+	padding: 40px 0 40px 0;
+}
+#last a{
+	text-decoration: none;
+	font-size: 80%;
+	padding: 10px 5px 40px 5px;
+	color: hsl(168, 34%, 41%);
+}
+#contact{
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+#contact svg{
+	margin: 10px;
+}
+@media only screen and (min-width: 1024px){
+	header{
+		background-image: url("images/desktop/image-header.jpg");
+		height: 44em;
+	}
+	html{
+		margin: 10px;
+	}
+	header{
+		padding: 2em;
+	}
+	#dropdown{
+		display: none;
+	}
+	#dropdown-content{
+		display: block;		
+	}
+	#dropdown-content{
+		clear: both;
+		margin: 0;
+		padding: 0;
+		position: static;
+		background: none;
+		clear: both;	
+		background: white;
+		height: 0;	
+		float: right;
+	}
+	#dropdown-content #cont{
+		position: static;
+		text-decoration: none;
+		border-radius: 30px;
+		margin: 0 40px 15px 40px;
+		border: 0px solid white;
+		display: flex;
+		justify-content: center;
+		float: right;
+	}
+	#dropdown-content a{
+		padding: 10px;
+		border: 0px solid white;
+		color: white;
+		float: right;
+	}
+	img{
+		width: 50%;
+	}
+	#graphic, #photography{
+		padding-top: 450px;
+	}
+	.content{
+		text-align: left;
+		padding: 120px;
+	}
+
+	.person p{
+		padding: 20px;
+	}
+	#image{
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+		width: 100%;
+		margin-top: 40px;
+	}
+	#image img{
+		width: 100%;
+	}
+	footer .logo{
+		margin: 30px;
+	}
+	footer{
+		padding-bottom: 30px;
+		font-size: 2em;
+	}
+	p, h2, span{
+		font-size: 2em;
+	}
+	.col-2 img, #gra, #photo{
+		width: 100%;
+		height: 800px;
+	}
+	.col-2, #row, .last-one{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		width: 100%;
+	}
+	#row{
+		display: flex;
+	}
+	#resever img{
+		order: 2
+	}
+	#resever .content{
+		order: 1;
+	}
+	#contact svg{
+		margin: 20px;
+	}
+	footer a {
+		margin: 30px;
+	}
+	header nav a:hover, #cont:hover{
+		background: hsl(198, 62%, 26%);
+		cursor: pointer;
+	}
+	#cont
+}
